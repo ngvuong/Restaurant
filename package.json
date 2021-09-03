@@ -1,0 +1,23 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "A simple restaurant page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngvuong/Restaurant.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngvuong/Restaurant/issues"
+  },
+  "homepage": "https://github.com/ngvuong/Restaurant#readme",
+  "devDependencies": {
+    "webpack": "^5.51.2",
+    "webpack-cli": "^4.8.0"
+  }
+}
