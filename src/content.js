@@ -3,7 +3,7 @@ export function addContent() {
   const headline = document.createElement("h1");
   const message = document.createElement("p");
 
-  headline.textContent = "Grandma's Phở";
+  headline.textContent = "Grandma's Homemade";
   message.textContent =
     "Welcome! Feel at home and have a lovely meal at Backyard Cuisines!";
 
