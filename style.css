@@ -30,7 +30,7 @@ body::before {
   height: 25vmin;
 }
 
-#content {
+.home {
   display: flex;
   width: 50%;
   flex-direction: column;
