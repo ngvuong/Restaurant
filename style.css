@@ -18,22 +18,31 @@ body::before {
   width: 100vw;
   height: 100vh;
   background-image: url("restaurant.jpeg");
-  /* background-size: 100vw 100vh; */
   background-position: 50% 50%;
   background-size: cover;
   filter: blur(10px);
   z-index: -1;
-  box-shadow: inset 0 0 20px red;
+  box-shadow: inset 0 0 50px red;
+}
+
+.nav {
+  width: 100%;
+  height: 25vmin;
 }
 
 #content {
   display: flex;
+  width: 50%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #ffcc20;
-  font-size: ;
+  font-size: 3vmin;
+  text-align: center;
+  margin: auto;
 }
 
 .message {
+  color: white;
+  text-align: center;
 }
