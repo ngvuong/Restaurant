@@ -22,12 +22,23 @@ import { addContact } from "./contact.js";
   document.body.prepend(navBar);
   addHome();
 
-  buttons = document.querySelectorAll(".btn");
+  const buttons = document.querySelectorAll(".btn");
 
-  function addContent() {}
+  function addContent() {
+    if (!this.classList.contains("active")) {
+      buttons.forEach((btn) => btn.classList.remove("active"));
+      content.textContent = "";
+      this.classList.add("active");
+      const page = this.textContent;
+      if (page === "Home") {
+        addHome();
+      } else if (page === "Menu") {
+        addMenu();
+      } else addContact();
+    }
+  }
 
   buttons.forEach((btn) => {
-    console.log(this);
     btn.addEventListener("click", addContent);
   });
 })();

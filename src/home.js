@@ -14,7 +14,5 @@ export function addHome() {
 
   homeBtn.classList.add("active");
 
-  window.addEventListener("load", () => {
-    content.appendChild(main);
-  });
+  content.append(main);
 }
