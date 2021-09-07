@@ -17,12 +17,12 @@ body::before {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background-image: url("restaurant.jpeg");
+  background-image: url("assets/restaurant.jpeg");
   background-position: 50% 50%;
   background-size: cover;
   filter: blur(10px);
   z-index: -1;
-  box-shadow: inset 0 0 50px red;
+  /* box-shadow: inset 0 0 50px red; */
 }
 
 .nav {
@@ -38,7 +38,7 @@ body::before {
   color: white;
   font-size: 4vmin;
   background: none;
-  padding: 0 2%;
+  margin: 0 2%;
   border: none;
   transition: all 0.2s ease-in-out;
 }
@@ -66,4 +66,12 @@ body::before {
 .message {
   color: white;
   text-align: center;
+}
+
+.menu-page {
+  width: 90%;
+  height: 500px;
+  background: url("assets/menu.png");
+  background-color: rgb(243, 240, 240);
+  border: 1px solid red;
 }
