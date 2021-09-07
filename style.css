@@ -69,9 +69,30 @@ body::before {
 }
 
 .menu-page {
+  display: flex;
   width: 90%;
-  height: 500px;
+  height: 70vmin;
   background: url("assets/menu.png");
   background-color: rgb(243, 240, 240);
-  border: 1px solid red;
+  margin: auto;
+  border: 1rem double rgba(161, 52, 52, 0.8);
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.menu-category {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  width: 50%;
+}
+
+.food {
+  display: flex;
+  width: 50%;
+}
+
+.drinks {
+  display: flex;
+  width: 50%;
 }
