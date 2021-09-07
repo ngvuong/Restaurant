@@ -1,5 +1,6 @@
 export function addContent() {
   const content = document.querySelector("#content");
+  const homeBtn = document.querySelector(".nav").firstElementChild();
   const main = document.createElement("main");
   const headline = document.createElement("h1");
   const message = document.createElement("p");
