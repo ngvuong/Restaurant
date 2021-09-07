@@ -9,5 +9,5 @@ export function addMenu() {
   const item4 = document.createElement("div");
   const drinkSubtitle = document.createElement("h2");
   const drink1 = document.createElement("div");
-  const drink1 = document.createElement("div");
+  const drink2 = document.createElement("div");
 }

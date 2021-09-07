@@ -1,1 +1,1 @@
-alert("Hello Restaurant Page");
+(()=>{"use strict";!function(){const e=document.querySelector("#content"),t=document.createElement("h1"),n=document.createElement("p");t.textContent="Grandma's Homemade",n.textContent="Welcome! Feel at home and have a lovely meal at Grandma's Homemade! We have all your favorite Vietnamese cuisines and drinks",n.classList.add("message"),window.addEventListener("load",(()=>{e.append(t,n)}))}(),document.addEventListener("click",(()=>{}))})();
