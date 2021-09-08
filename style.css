@@ -14,15 +14,15 @@ body {
 
 body::before {
   content: "";
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 100vh;
   background-image: url("assets/restaurant.jpeg");
   background-position: 50% 50%;
+  background-attachment: scroll;
   background-size: cover;
   filter: blur(10px);
   z-index: -1;
-  /* box-shadow: inset 0 0 50px red; */
 }
 
 .nav {
@@ -70,7 +70,7 @@ body::before {
 
 .menu-page {
   display: flex;
-  width: 90%;
+  width: 80%;
   /* height: 70vmin; */
   background: url("assets/menu.png");
   background-color: rgb(243, 240, 240);
@@ -90,7 +90,7 @@ body::before {
   left: 10%;
   /* top: 50%; */
   /* z-index: -1; */
-  background: url("assets/pho2.png") no-repeat;
+  /* background: url("assets/pho2.png") no-repeat; */
   background-size: 50% 50%;
   /* background-position: center center; */
 }
@@ -113,6 +113,32 @@ body::before {
   width: 50%;
 }
 
-.menu-items p {
+.menu-item p {
   margin: 5px 5px;
+}
+
+.menu-items li {
+  /* display: inline; */
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+
+.menu-item img {
+  width: 3rem;
+  margin-right: 10%;
+}
+
+@media (max-width: 767px) {
+  .menu-item img {
+  }
+  .menu-item {
+    flex-direction: column;
+  }
+  .menu-page {
+    flex-direction: column;
+  }
 }
