@@ -2,7 +2,6 @@ export function addContact() {
   const content = document.querySelector("#content");
   const main = document.createElement("main");
   const contactInfo = document.createElement("div");
-  const hours = document.createElement("div");
 
   contactInfo.innerHTML = `<p>Phone: 777-545-6000</p>
     <p>Email: Gma55@gmail.com</p>

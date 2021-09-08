@@ -4,8 +4,10 @@
 
 body {
   margin: 0;
+  font-family: "Dancing Script", cursive;
 }
 
+/* Separate element for background blur */
 body::before {
   content: "";
   position: fixed;
@@ -93,25 +95,33 @@ body::before {
   width: 3rem;
   height: 3rem;
   margin-right: 10%;
+  margin-top: 3%;
+  border: 3px solid black;
 }
 
 .contact-page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 70%;
   background: url("assets/bg.png");
-  background-color: #f5eac6;
+  background-color: rgb(243, 240, 240);
   border: 10px groove rgb(120, 120, 209);
-  border-radius: 50%;
+  border-radius: 30%;
   margin: auto;
 }
 
 @media (max-width: 767px) {
   .menu-item {
     flex-direction: column;
+    align-items: center;
   }
   .menu-page {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-page {
+    width: 90%;
   }
 }

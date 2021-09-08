@@ -1,6 +1,5 @@
 export function addMenu() {
   const content = document.querySelector("#content");
-
   const main = document.createElement("main");
   const food = document.createElement("section");
   const foodHeading = document.createElement("h2");
@@ -21,6 +20,7 @@ export function addMenu() {
   const menuItem5 = document.createElement("div");
   const menuItem6 = document.createElement("div");
 
+  // Food section of menu - heading, menu items with image
   food.classList.add("menu-category");
   foodHeading.textContent = "Dishes";
 
@@ -54,6 +54,7 @@ export function addMenu() {
 
   foodItems.append(menuItem1, menuItem2, menuItem3, menuItem4);
 
+  // Drinks section of menu
   drinks.classList.add("menu-category");
   drinksHeading.textContent = "Drinks";
 

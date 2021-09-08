@@ -2,6 +2,7 @@ import { addHome } from "./home.js";
 import { addMenu } from "./menu.js";
 import { addContact } from "./contact.js";
 
+// IIFE for display
 (function contentDisplay() {
   const content = document.querySelector("#content");
   const navBar = document.createElement("nav");
@@ -9,21 +10,26 @@ import { addContact } from "./contact.js";
   const menu = document.createElement("button");
   const contact = document.createElement("button");
 
+  // Setup navigation for tabbed browsing
   home.textContent = "Home";
   menu.textContent = "Menu";
   contact.textContent = "Contact";
 
-  home.classList.add("btn", "home");
-  menu.classList.add("btn", "menu");
-  contact.classList.add("btn", "contact");
-
   navBar.classList.add("nav");
   navBar.append(home, menu, contact);
   document.body.prepend(navBar);
+
+  const buttons = document.querySelectorAll("button");
+
+  buttons.forEach((btn) => {
+    btn.classList.add("btn");
+    btn.addEventListener("click", addContent);
+  });
+
+  // Initial page load call to add homepage
   addHome();
 
-  const buttons = document.querySelectorAll(".btn");
-
+  // Page switching logic to add active tab contents
   function addContent() {
     if (!this.classList.contains("active")) {
       buttons.forEach((btn) => btn.classList.remove("active"));
@@ -37,8 +43,4 @@ import { addContact } from "./contact.js";
       } else addContact();
     }
   }
-
-  buttons.forEach((btn) => {
-    btn.addEventListener("click", addContent);
-  });
 })();
