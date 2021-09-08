@@ -14,7 +14,7 @@ body::before {
   background-image: url("assets/restaurant.jpeg");
   background-position: 50% 50%;
   background-size: cover;
-  filter: blur(10px);
+  filter: blur(5px);
   z-index: -1;
 }
 
@@ -64,8 +64,7 @@ body::before {
 .menu-page {
   display: flex;
   width: 80%;
-  /* height: 70vmin; */
-  background: url("assets/menu.png");
+  background: url("assets/bg.png");
   background-color: rgb(243, 240, 240);
   margin: auto;
   border: 1rem double rgba(161, 52, 52, 0.8);
@@ -94,6 +93,18 @@ body::before {
   width: 3rem;
   height: 3rem;
   margin-right: 10%;
+}
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  background: url("assets/bg.png");
+  background-color: #f5eac6;
+  border: 10px groove rgb(120, 120, 209);
+  border-radius: 50%;
+  margin: auto;
 }
 
 @media (max-width: 767px) {
