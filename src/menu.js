@@ -18,21 +18,22 @@ export function addMenu() {
   food.classList.add("menu-category");
   foodHeading.textContent = "Dishes";
 
-  dish1.innerHTML = `<em>Grandma's Homemade Phở Bò</em> <br />
-    - Beef Noodle soup <br/>
-    This is Grandma's favorite dish.`;
+  dish1.classList.add("dish1");
+  dish1.innerHTML = `<p><em>Grandma's Homemade Phở Bò</em></p>
+    <p>- Beef Noodle soup</p>
+    <p>This is Grandma's favorite dish.</p>`;
 
-  dish2.innerHTML = `<em>Grandma's Homemade Phở Gà</em> <br />
-    - Chicken Noodle soup <br/>
-    This is Grandma's favorite dish.`;
+  dish2.innerHTML = `<p><em>Grandma's Homemade Phở Gà</em></p> 
+    <p>- Chicken Noodle soup</p> 
+    <p>This is Grandma's favorite dish.</p>`;
 
-  dish3.innerHTML = `<em>Grandma's Homemade Bánh Mì</em> <br />
-    - Vietnamese Sandwich <br/>
-    This is Grandma's favorite dish.`;
+  dish3.innerHTML = `<p><em>Grandma's Homemade Bánh Mì</em></p>
+    <p>- Vietnamese Sandwich</p> 
+    <p>This is Grandma's favorite dish.</p>`;
 
-  dish4.innerHTML = `<em>Cơm Tấm </em> <br />
-    - Rice plate <br/>
-    This one is ok.`;
+  dish4.innerHTML = `<p><em>Cơm Tấm </em></p>
+    <p>- Rice plate</p> 
+    <p>This one is ok.</p>`;
 
   foodItems.classList.add("menu-items");
   foodItems.append(dish1, dish2, dish3, dish4);
@@ -40,13 +41,13 @@ export function addMenu() {
   drinks.classList.add("menu-category");
   drinksHeading.textContent = "Drinks";
 
-  drink1.innerHTML = `<em>Grandma's Homemde Thai Tea</em> <br/>
-    - Thai ice tea <br/>
-    Grandma likes this.`;
+  drink1.innerHTML = `<p><em>Grandma's Homemde Thai Tea</em></p> 
+    <p>- Thai ice tea</p> 
+    <p>Grandma likes this.</p>`;
 
-  drink2.innerHTML = `<em>Grandma's Homemde Jack 'n Coke</em> <br />
-    - Jack and Coke <br/>
-    Grandma loves this.`;
+  drink2.innerHTML = `<p><em>Grandma's Homemde Jack 'n Coke</em></p> 
+    <p>- Jack and Coke</p> 
+    <p>Grandma loves this.</p>`;
 
   drinkItems.classList.add("menu-items");
   drinkItems.append(drink1, drink2);
