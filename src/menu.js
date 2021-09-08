@@ -24,56 +24,54 @@ export function addMenu() {
   food.classList.add("menu-category");
   foodHeading.textContent = "Dishes";
 
-  dish1.innerHTML = `<p><em>Grandma's Homemade Phở Bò</em></p>
+  dish1.innerHTML = `<p><strong>Grandma's Homemade Phở Bò</strong></p>
   <p>- Beef Noodle soup</p>
   <p>This is Grandma's favorite dish.</p>`;
   menuItem1.classList.add("menu-item");
-  menuItem1.insertAdjacentHTML("afterbegin", '<img src="assets/pho2.png">');
+  menuItem1.insertAdjacentHTML("afterbegin", '<img src="assets/phobo.jpg">');
   menuItem1.append(dish1);
 
-  dish2.innerHTML = `<p><em>Grandma's Homemade Phở Gà</em></p> 
+  dish2.innerHTML = `<p><strong>Grandma's Homemade Phở Gà</strong></p> 
   <p>- Chicken Noodle soup</p> 
   <p>This is Grandma's favorite dish.</p>`;
   menuItem2.classList.add("menu-item");
-  menuItem2.insertAdjacentHTML("afterbegin", '<img src="assets/pho2.png">');
+  menuItem2.insertAdjacentHTML("afterbegin", '<img src="assets/phoga.jpg">');
   menuItem2.append(dish2);
 
-  dish3.innerHTML = `<p><em>Grandma's Homemade Bánh Mì</em></p>
+  dish3.innerHTML = `<p><strong>Grandma's Homemade Bánh Mì</strong></p>
   <p>- Vietnamese Sandwich</p> 
   <p>This is Grandma's favorite dish.</p>`;
   menuItem3.classList.add("menu-item");
-  menuItem3.insertAdjacentHTML("afterbegin", '<img src="assets/pho2.png">');
+  menuItem3.insertAdjacentHTML("afterbegin", '<img src="assets/banhmi.jpg">');
   menuItem3.append(dish3);
 
-  dish4.innerHTML = `<p><em>Cơm Tấm </em></p>
+  dish4.innerHTML = `<p><strong>Cơm Tấm </strong></p>
   <p>- Rice plate</p> 
   <p>This one is ok.</p>`;
   menuItem4.classList.add("menu-item");
-  menuItem4.insertAdjacentHTML("afterbegin", '<img src="assets/pho2.png">');
+  menuItem4.insertAdjacentHTML("afterbegin", '<img src="assets/comtam.jpg">');
   menuItem4.append(dish4);
 
-  foodItems.classList.add("menu-items");
   foodItems.append(menuItem1, menuItem2, menuItem3, menuItem4);
 
   drinks.classList.add("menu-category");
   drinksHeading.textContent = "Drinks";
 
-  drink1.innerHTML = `<p><em>Grandma's Homemde Thai Tea</em></p> 
+  drink1.innerHTML = `<p><strong>Grandma's Homemade Thai Tea</strong></p> 
     <p>- Thai ice tea</p> 
     <p>Grandma likes this.</p>`;
   menuItem5.classList.add("menu-item");
-  menuItem5.insertAdjacentHTML("afterbegin", '<img src="assets/pho2.png">');
+  menuItem5.insertAdjacentHTML("afterbegin", '<img src="assets/thaitea.jpg">');
   menuItem5.append(drink1);
 
-  drink2.innerHTML = `<p><em>Grandma's Homemde Jack 'n Coke</em></p> 
-    <p>- Jack and Coke</p> 
+  drink2.innerHTML = `<p><strong>Grandma's Homemade Jack 'n Coke</strong></p> 
+    <p>- Jack <strong>and</strong> Coke</p> 
     <p>Grandma loves this.</p>`;
   menuItem6.classList.add("menu-item");
-  menuItem6.insertAdjacentHTML("afterbegin", '<img src="assets/pho2.png">');
+  menuItem6.insertAdjacentHTML("afterbegin", '<img src="assets/jnc.jpg">');
   menuItem6.append(drink2);
 
-  drinkItems.classList.add("menu-items");
-  drinkItems.append(drink1, drink2);
+  drinkItems.append(menuItem5, menuItem6);
 
   food.append(foodHeading, foodItems);
   drinks.append(drinksHeading, drinkItems);
