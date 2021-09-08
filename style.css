@@ -71,12 +71,28 @@ body::before {
 .menu-page {
   display: flex;
   width: 90%;
-  height: 70vmin;
+  /* height: 70vmin; */
   background: url("assets/menu.png");
   background-color: rgb(243, 240, 240);
   margin: auto;
   border: 1rem double rgba(161, 52, 52, 0.8);
   box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.dish1 {
+  /* position: relative; */
+}
+.dish1::before {
+  content: "";
+  width: 10%;
+  height: 10%;
+  position: fixed;
+  left: 10%;
+  /* top: 50%; */
+  /* z-index: -1; */
+  background: url("assets/pho2.png") no-repeat;
+  background-size: 50% 50%;
+  /* background-position: center center; */
 }
 
 .menu-category {
@@ -97,6 +113,6 @@ body::before {
   width: 50%;
 }
 
-.menu-items li {
-  margin: 10px 5px;
+.menu-items p {
+  margin: 5px 5px;
 }
